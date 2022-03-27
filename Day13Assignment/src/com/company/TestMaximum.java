@@ -9,7 +9,7 @@ public class TestMaximum {
         List<Integer> integers = new ArrayList<>();
         integers.add(589);
         integers.add(689);
-        integers.add(100);
+        integers.add(789);
         integers.sort(Integer::compareTo);
         System.out.println("The Maximum of three numbers is " + integers.get(2));
     }
