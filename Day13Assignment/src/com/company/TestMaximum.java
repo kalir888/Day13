@@ -8,7 +8,7 @@ public class TestMaximum {
 
     public static void main(String[] args) {
         List<Integer> integers = new ArrayList<>();
-        integers.add(500);
+        integers.add(589);
         integers.add(300);
         integers.add(100);
         integers.sort(Integer::compareTo);
