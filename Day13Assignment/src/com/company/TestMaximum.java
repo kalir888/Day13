@@ -7,11 +7,11 @@ import java.util.List;
 public class TestMaximum {
 
     public static void main(String[] args) {
-        List<Integer> integers = new ArrayList<>();
-        integers.add(500);
-        integers.add(300);
-        integers.add(100);
-        integers.sort(Integer::compareTo);
+        List<Float> integers = new ArrayList<>();
+        integers.add(100.5f);
+        integers.add(78.5f);
+        integers.add(50.5f);
+        integers.sort(Float::compareTo);
         System.out.println("The Maximum of three numbers is " + integers.get(2));
         
     }
