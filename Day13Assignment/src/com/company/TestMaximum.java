@@ -16,7 +16,8 @@ public class TestMaximum {
     }
 
     public static void main(String[] args) {
-
+        Integer max = findMax(65465,654,4654);
+        System.out.println(max);
         
     }
 }
