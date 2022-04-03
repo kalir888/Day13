@@ -15,9 +15,9 @@ public class TestMaximum <T  extends Comparable> {
         this.c = c;
     }
 
-    public T toFindMax() {
+    public void toPrintMax() {
         T max = findMax(x,y,z,a,b,c);
-        return max;
+        System.out.println("Maximum of given is " + max);
     }
 
     private static <T extends Comparable> T findMax(T x, T y, T z, T a, T b, T c) {
@@ -34,13 +34,8 @@ public class TestMaximum <T  extends Comparable> {
 
     public static void main(String[] args) {
 
-        Integer intMax = new TestMaximum<Integer>(65465,654,4654,5456,5554,488).toFindMax();
-        System.out.println(intMax);
-
-        Float floatMax = new TestMaximum<Float>(45.145f,654.25f,5654.54f,5456.55f,4989.55f,464.54f).toFindMax();
-        System.out.println(floatMax);
-
-        String stringMax = new TestMaximum<String>("KaliMuthu", "Geetha", "Ramachandran","MuthuKumar", "Mugundhan", "Santhi").toFindMax();
-        System.out.println(stringMax);
+        new TestMaximum<Integer>(65465,654,4654,5456,5554,488).toPrintMax();
+        new TestMaximum<Float>(45.145f,654.25f,5654.54f,5456.55f,4989.55f,464.54f).toPrintMax();
+        new TestMaximum<String>("KaliMuthu", "Geetha", "Ramachandran","MuthuKumar", "Mugundhan", "Santhi").toPrintMax();
     }
 }
