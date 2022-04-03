@@ -1,32 +1,14 @@
 package com.company;
 
 public class TestMaximum {
-    
-    public static Integer findMax(Integer x, Integer y, Integer z) {
-        Integer intMax = x;
-        if (y.compareTo(intMax) > 0)
-            intMax = y;
-        if (z.compareTo(intMax) > 0)
-            intMax = z;
-        return intMax;
-    }
 
-    public static Float findMax(Float x, Float y, Float z) {
-        Float floatMax = x;
-        if (y.compareTo(x) > 0)
-            floatMax = y;
-        if (z.compareTo(y) > 0)
-            floatMax = z;
-        return floatMax;
-    }
-
-    public static String findMax(String x, String y, String z) {
-        String stringMax = x;
-        if (y.compareTo(x) > 0)
-            stringMax = y;
-        if (z.compareTo(y) > 0)
-            stringMax = z;
-        return stringMax;
+    public static <T extends Comparable> T findMax(T x, T y,T z) {
+        T max = x;
+        if(y.compareTo(x) > 0)
+            max = y;
+        if(z.compareTo(y) > 0)
+            max = z;
+        return max;
     }
 
     public static void main(String[] args) {
