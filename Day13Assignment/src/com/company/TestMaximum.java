@@ -8,9 +8,9 @@ public class TestMaximum {
 
     public static Float findMax(Float x, Float y, Float z) {
         Float max = x;
-        if(x.compareTo(y) > 0)
+        if(y.compareTo(x) > 0)
             max = y;
-        if(y.compareTo(z) > 0)
+        if(z.compareTo(y) > 0)
             max = z;
         return max;
     }
