@@ -4,26 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestMaximum {
-
+    public static String findMax(String x,String y,String z) {
+        String stringMax = x;
+        if(y.compareTo(x) > 0)
+            stringMax = y;
+        if(z.compareTo(y) > 0)
+            stringMax = z;
+        return stringMax;
+    }
     public static void main(String[] args) {
-        List integers = new ArrayList();
-        integers.add(200);
-        integers.add(500);
-        integers.add(489);
-        Class class1 = integers.get(0).getClass();
-        String name = class1.getName();
-        System.out.println(name);
-
-        CompareMethod compare = new CompareMethod();
-
-        Class class2 = compare.getClass();
-        System.out.println(class2);
-        String name2 = class2.getName();
-        System.out.println(name2);
-
-        System.out.println("The Maximum of three Strings is " + integers.get(2));
-
-
-        
+        String stringMax = findMax("KaliMuthu","Geetha","Ramachandran");
+        System.out.println(stringMax);
     }
 }
